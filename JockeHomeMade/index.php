@@ -9,7 +9,12 @@
         ?>/images/200x1100_Red_Bridge.jpeg" alt="karusellbild - bridge and sky" height="200" width="1100" />
 </div><!-- /carousel-small -->
 
-<div id="content"> 
+<div id="content">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    
+    <?php endwhile; else: ?>
+
+    <?php endif; ?>
 </div><!-- /content -->
 
 <?php get_sidebar(); ?>
