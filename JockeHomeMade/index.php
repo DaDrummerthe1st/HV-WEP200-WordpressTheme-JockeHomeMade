@@ -52,6 +52,7 @@
         </header><!-- /post -->
         
         <section class="entry-content">
+            <?php the_content(); ?>
         </section><!-- /entry-content -->
 
         <footer class="post">
@@ -59,6 +60,14 @@
 
     </article><!-- /post -->
 <?php endwhile; else: ?>
+
+    <section class="entry-title">
+        <h2>Doh!</h2>
+    </section><!-- /entry-title -->
+
+    <section class="entry-content">
+        <p>There's is nothing to show</p>
+    </section><!-- /entry-content -->
 
 <?php endif; ?>
 </div><!-- /content -->
