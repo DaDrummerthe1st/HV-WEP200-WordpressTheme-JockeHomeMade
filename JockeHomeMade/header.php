@@ -16,7 +16,12 @@
     <div id="container">
         <header id="main">
             <div id="logo">
-                <img src="images/logo.png" alt="logotype" /> <!-- will be exchanged for a dynamic link -->
+                <img src="<?php
+                    # in Wordpress every link has to be absolute
+                    # retrieves the absolute path to this theme
+                    # https://developer.wordpress.org/reference/functions/get_template_directory_uri/
+                    echo get_template_directory_uri();
+                ?>/images/logo.png" alt="logotype" /> <!-- will be exchanged for a dynamic link -->
             </div> <!-- /logo -->     
             <nav id="main">
                 <?php wp_nav_menu(); # using wps own system for nav menus ?>
