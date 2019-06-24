@@ -189,6 +189,13 @@ h6 { font-size: 1em; }
  * =============================================================== */
  /* To create a subpage:
  * https://wordpress.org/support/article/pages/#to-create-a-subpage*/
+
+ /* Unresolved problems:
+ * If subpages headlines are longer than parent page - the hover
+ background color only covers the last line.
+ Last subheadline has a margin to the right uninvisible in the
+ inspector.
+ */
  
  nav li {
      display: inline;
@@ -239,8 +246,39 @@ h6 { font-size: 1em; }
  }
 
   /*
- *
+ * POSTS
  * =============================================================== */
+ article.post {
+     margin-bottom: 3em;
+     padding: 0 2em;
+}
+
+header.post {
+     margin-bottom: 3em;
+}
+
+section.entry-title,
+section.entry-title a {
+     font-family: 'Yanone Kaffeesatz', sans-serif;
+     font-size: 1.3em;
+     font-weight: 100;
+     text-decoration: none;
+     margin-bottom: 0.5em;
+}
+
+section.entry-meta {
+    font-family: Ubuntu, sans-serif;
+    font-size: 0.8em;
+}
+
+section.entry-content {
+    clear: both;
+    line-height: 1.4em;
+}
+
+section.entry-content p {
+    margin: 1.3em 0;
+}
 
   /*
  *
