@@ -269,6 +269,7 @@ section.entry-title a {
 section.entry-meta {
     font-family: Ubuntu, sans-serif;
     font-size: 0.8em;
+    font-weight: bold;
 }
 
 section.entry-content {
@@ -281,8 +282,44 @@ section.entry-content p {
 }
 
   /*
- *
+ * WIDGET
  * =============================================================== */
+.widget-container {
+     margin-bottom: 5em;
+     clear: both;
+}
+
+.widget-title {
+     margin-bottom: 0.6em;
+     background-color: #459fff;
+}
+
+.widget-title h3 {
+     color: #fff;
+     text-align: center;
+     font-size: 1.2em;
+     padding: 0.7em 0;
+     margin-bottom: 1em;
+}
+
+.widget-title:hover {
+     background-color: #ff530d;
+}
+
+.widget-container ul li {
+     margin-left: 1.5em; /* for indentation */
+     line-height: 1.4em;
+     list-style-image: url(images/15px-Yellow_Arrow_Right.svg.png);
+}
+
+.widget-container ul li a {
+     text-decoration: none;
+     color: #555;
+}
+
+.widget-container ul li a:hover {
+     font-size: 1.01em;
+}     
 
   /*
  *
