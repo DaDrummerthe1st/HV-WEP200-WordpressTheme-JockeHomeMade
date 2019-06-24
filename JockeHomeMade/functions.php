@@ -54,4 +54,21 @@ if(function_exists('register_sidebar')) {
     ));
 }
 
- ?>
+/*
+ * Give theme support for changing logo
+ * https://developer.wordpress.org/themes/functionality/custom-logo/
+ * =============================================================== */
+
+# if width and height are not specified with a unit, px is set
+# default-image - make sure it is set.
+#  the get_template_directory_uri() does not provide a tailing /
+# uploads => true = its ok to use the uploads directory
+ $args = array(
+    'width'         => '180',
+    'height'        => '39',
+    'default-image' => get_template_directory_uri() . '/images/logo.png',
+    'uploads'       => true
+);
+
+
+?>
