@@ -302,10 +302,6 @@ section.entry-content p {
      margin-bottom: 1em;
 }
 
-.widget-title:hover {
-     background-color: #ff530d;
-}
-
 .widget-container ul li {
      margin-left: 1.5em; /* for indentation */
      line-height: 1.4em;
@@ -322,8 +318,22 @@ section.entry-content p {
 }     
 
   /*
- *
+ * SEARCHFORM
  * =============================================================== */
+ #searchform #s {
+     width: 75%;
+     font: 2em Ubuntu, sans-serif;
+     height: 1.6em;
+ }
+
+ #searchform #search-button {
+     background: url(images/magnifying-glass.png) no-repeat;
+     height: 3em;
+     width: 3em;
+     border: none;
+     text-indent: 1000em;
+     cursor: pointer;
+ }
 
   /*
  *
