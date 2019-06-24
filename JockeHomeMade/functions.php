@@ -1,4 +1,12 @@
 <?php
+
+ /*
+ * Import css
+ * Not imported this way makes the css-file work funny
+ * https://developer.wordpress.org/themes/basics/including-css-javascript/#stylesheets
+ * =============================================================== */
+wp_enqueue_style('style', get_stylesheet_uri());
+
 /*
  * Define me some sidebars
  * =============================================================== */

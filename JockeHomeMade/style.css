@@ -1,13 +1,24 @@
 /*
     Theme Name: Jocke Homemade
     Theme URI: http://localhost
-    Description: Jockes tema för WEP200
-    Copyright: GPLv2
-    Version 2.0
     Author: Joakim Reuterborg
     Author URI: https://reuterborg.se
+    Description: Jockes tema för WEP200
+    Version 2.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Text Domain: jockedevhomemade
     Tags: simple, clean
+    This theme, like WordPress, is licensed under the GPL.
+    Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+/* 
+ * https://developer.wordpress.org/themes/basics/main-stylesheet-style-css/
+ * Stylesheet has to be imported this way:
+ * https://developer.wordpress.org/themes/basics/including-css-javascript/#stylesheets
+*/
+
 /*
  * CSS-RESET
  * =============================================================== */
@@ -85,14 +96,117 @@ table {
 }
 
  /*
+ * Standard stuff
+ * =============================================================== */
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    background-color:#ddd;
+}
+
+#carousel-small img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3em;
+}
+
+#content a,
+#content a:visited {
+    color: #458fff;
+}
+
+#content a:hover {
+    background: #ff530d;
+    color: black;
+}
+
+ /*
+ * HEADLINES
+ * =============================================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+
+ /*
+ * LAYOUT
+ * =============================================================== */
+ header#main {
+     height: 3em;
+     width:  100%;
+     padding: 3em 0;
+ }
+
+ #container {
+     width: 1100px;
+     margin: 3em auto;
+     background: #fff; 
+ }
+
+ #logo {
+     float: left;
+     padding-left: 2em;
+ }
+
+ nav#main {
+     float: right;
+     padding-right: 2em;
+ }
+
+ #content {
+     width: 60%;
+     float: left;
+ }
+
+ aside#sidebar {
+     width: 30%;
+     float: right;
+     padding-right: 2em;
+ }
+
+ footer#main {
+     font-family: 'Yanone Kaffeesatz', sans-serif;
+     font-size: 6em;
+     font-weight: lighter;
+     text-align: center;
+     padding: 1em 0;
+     width: 100%;
+     background: #333;
+     color: #eee;
+     clear: both;
+ }
+
+  /*
  *
  * =============================================================== */
 
- /*
+  /*
  *
  * =============================================================== */
 
- /*
+  /*
  *
  * =============================================================== */
+
+  /*
+ *
+ * =============================================================== */
+
+  /*
+ *
+ * =============================================================== */
+
+  /*
+ *
+ * =============================================================== */
+
+ 
  

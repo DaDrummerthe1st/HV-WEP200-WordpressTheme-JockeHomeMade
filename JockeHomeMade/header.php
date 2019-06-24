@@ -3,7 +3,6 @@
 <head>
     <meta charset="<?php bloginfo('charset'); # bloginfo() contains a whole lot of information about the site ?>" />
     <title><?php wp_title(); ?></title>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri() ?>" type="text/css" media="screen" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' )?>" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet" />
