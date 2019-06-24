@@ -55,20 +55,29 @@ if(function_exists('register_sidebar')) {
 }
 
 /*
- * Give theme support for changing logo
+ * Give THEME SUPPORT for changing logo
  * https://developer.wordpress.org/themes/functionality/custom-logo/
+ * https://en.support.wordpress.com/custom-header-image/
  * =============================================================== */
 
 # if width and height are not specified with a unit, px is set
 # default-image - make sure it is set.
 #  the get_template_directory_uri() does not provide a tailing /
 # uploads => true = its ok to use the uploads directory
- $args = array(
+$args = array(
     'width'         => '180',
     'height'        => '39',
     'default-image' => get_template_directory_uri() . '/images/logo.png',
     'uploads'       => true
 );
 
-
+ # this hook has to be included in functions.php in order for custom
+ # logo support to exist, as per above link
+ # this code includes backwards compatibility
+global $wp_version;
+if ( version_compare( $wp_version, '3.4', '>=' ) ) :
+	add_theme_support( 'custom-header' );
+else :
+	add_custom_image_header( $wp_head_callback, $admin_head_callback );
+endif;
 ?>

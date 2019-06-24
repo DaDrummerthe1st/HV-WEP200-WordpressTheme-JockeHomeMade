@@ -16,12 +16,15 @@
     <div id="container">
         <header id="main">
             <div id="logo">
-                <img src="<?php
-                    # in Wordpress every link has to be absolute
-                    # retrieves the absolute path to this theme
-                    # https://developer.wordpress.org/reference/functions/get_template_directory_uri/
-                    echo get_template_directory_uri();
-                ?>/images/logo.png" alt="logotype" /> <!-- will be exchanged for a dynamic link -->
+                <?php
+                    if(get_header_image( )) { ?>
+                        <a href="<?php echo esc_url( home_url('/')); ?>" rel="home">
+                            <img src="<?php header_image(); ?>"
+                                width="<?php get_custom_header()->width; ?>"
+                                height="<?php get_custom_header()->height; ?>"
+                                alt="Logo" />
+                        </a>
+                    <?php } ?>
             </div> <!-- /logo -->     
             <nav id="main">
                 <?php wp_nav_menu(); # using wps own system for nav menus ?>
