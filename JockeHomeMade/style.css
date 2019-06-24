@@ -96,7 +96,7 @@ table {
 }
 
  /*
- * Standard stuff
+ * STANDARD
  * =============================================================== */
 
 body {
@@ -185,8 +185,58 @@ h6 { font-size: 1em; }
  }
 
   /*
- *
+ * NAVIGATION
  * =============================================================== */
+ /* To create a subpage:
+ * https://wordpress.org/support/article/pages/#to-create-a-subpage*/
+ 
+ nav li {
+     display: inline;
+     list-style: none;
+     margin: 10px 0;
+     position: relative;
+     line-height: 2em;
+     font-size: 1.1em;
+     font-family: Ubuntu, sans-serif;
+    }
+
+ nav li a, nav li a:visited {
+     text-decoration: none;
+     text-align: left;
+     color: #555;
+     padding: 0 10px;
+     margin: 0;
+     display: inline-block;
+ }
+
+ /* Representing the parent row of nav */
+ nav ul li:hover {
+     border-bottom: 3px solid #ff530d;
+ }
+
+ /* Representing the child row of nav */
+ nav ul li ul li:hover {
+     border-bottom: none;
+     background: #faa27f;
+ }
+
+ nav ul ul {
+     display: none;
+     position: absolute;
+     right: 0;
+     background: #fff;
+ }
+
+ /* "When hovering an element AND the element has children..." */
+ nav li:hover > ul {
+     display: block;
+ }
+
+ nav li ul li {
+     width: 7em;
+     font-size: 80%;
+     text-align: right;
+ }
 
   /*
  *
