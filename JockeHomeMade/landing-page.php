@@ -4,15 +4,19 @@
  * Description: A big landing page for the site
  */
 ?>
+<?php 
+/*
+ * Notes:
+ * Just by creating this template file (naming it Template name) and 
+ * putting it in my theme-folder, WP automatically admits it and uses
+ * it when creating new pages
+ * A page template is an alternative to the rest of the site
+ */
+?>
 
 <?php get_header(); ?>
 <div id="carousel-big">
-    <img src="<?php
-                # in Wordpress every link has to be absolute
-                # retrieves the absolute path to this theme
-                # https://developer.wordpress.org/reference/functions/get_template_directory_uri/
-                echo get_template_directory_uri();
-            ?>/images/200x1100_Red_Bridge.jpeg" alt="karusellbild - bridge and sky" height="600" width="1100" />
+    <img src="http://lorempixel.com/1100/600/city/9/" alt="karusellbild - bridge and sky" height="600" width="1100" />
 </div><!-- /carousel-small -->
 
 <div id="fullwidth">
