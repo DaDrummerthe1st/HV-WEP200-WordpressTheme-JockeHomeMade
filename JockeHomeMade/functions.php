@@ -10,6 +10,9 @@ wp_enqueue_style('style', get_stylesheet_uri());
 /*
  * Define me some sidebars
  * =============================================================== */
+
+/* https://www.wpbeginner.com/glossary/sidebar/ */
+
 /* When this is present in the theme-catalogue, an option to edit
 and fill this with activated widgets becomes available in the
 Dashboard. */

@@ -1,0 +1,2 @@
+A page template is an alternative to the rest of the site
+
