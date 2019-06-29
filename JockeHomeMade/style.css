@@ -356,7 +356,7 @@ section.entry-content p {
 
  /* !important - if the web reader has to choose then this is a way of saying not so important in conflicts */
  .one-third {
-     width: 33% !important;
+     width: 33%;
  }
 
  .callout {

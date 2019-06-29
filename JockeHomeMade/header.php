@@ -16,9 +16,9 @@
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
     <!-- 
-        IE < 9 can not handle media queries, thus the following special hack
+        IE <= 9 can not handle media queries, thus the following special hack
         If less than IE 9
-        The Google script makes older web browser responsive
+        This Google script makes older web browser responsive
     -->
     <!-- [if lt IE 9]>
         <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
