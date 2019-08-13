@@ -8,8 +8,7 @@
 <?php
     # https://codex.wordpress.org/The_Loop 
     # Not really written the same way here, but this way doesnt render an error
-?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <article class="post">
 
         <header class="post">
