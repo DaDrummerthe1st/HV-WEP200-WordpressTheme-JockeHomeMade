@@ -11,8 +11,8 @@
     
     <!--
     disables the possibility to pinch zoom 
-    initial-scale=1 == när man kommer till sidan är den inzoomad till 100%
-    maximum-scale=1 == det mesta man kan zooma in på sidan är 100% aka man kan inte pinch zooma
+    initial-scale=1 == site is already at 100% zoom
+    maximum-scale=1 == maximum zoom in is 100% meaning you cant pinchzoom further on mobile device
     -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
     <!-- 
@@ -23,7 +23,7 @@
     <!-- [if lt IE 9]>
         <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <! [endif]-->
-    <?php wp_head(); # tells wp the header ends and is possible to add more material ?>
+    <?php wp_head(); # tells wp the header ends and its possible to add more material from here ?>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
         <header id="main">
             <div id="logo">
                 <?php
-                    if(get_header_image( )) { ?>
+                    if(get_header_image( )) { # Insert the CMS handled header img for customization ?>
                         <a href="<?php echo esc_url( home_url('/')); ?>" rel="home">
                             <img src="<?php header_image(); ?>"
                                 width="<?php get_custom_header()->width; ?>"

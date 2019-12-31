@@ -20,6 +20,7 @@ Dashboard. */
 if(function_exists('register_sidebar')) {
     
 # 'id' matched against sidebar.php -> dynamic_sidebar('main-sidebar')
+// register_siderbar connects to WP_Widget/widget()
     register_sidebar( 
         array(
             'name' => 'Main sidebar',
