@@ -2,7 +2,7 @@
 
  /*
  * Import css
- * Not imported this way makes the css-file work funny
+ * Not imported this way makes the css-file operate wrong
  * https://developer.wordpress.org/themes/basics/including-css-javascript/#stylesheets
  * =============================================================== */
 wp_enqueue_style('style', get_stylesheet_uri());
@@ -17,10 +17,12 @@ wp_enqueue_style('style', get_stylesheet_uri());
 and fill this with activated widgets becomes available in the
 Dashboard. */
 
+# function_exists is a php function returning a boolean
+# https://www.php.net/manual/en/function.function-exists.php
 if(function_exists('register_sidebar')) {
     
 # 'id' matched against sidebar.php -> dynamic_sidebar('main-sidebar')
-// register_siderbar connects to WP_Widget/widget()
+// register_sidebar connects to WP_Widget/widget()
     register_sidebar( 
         array(
             'name' => 'Main sidebar',
@@ -74,8 +76,8 @@ if(function_exists('register_sidebar')) {
 
 # if width and height are not specified with a unit, px is set
 # default-image - make sure it is set.
-#  the get_template_directory_uri() does not provide a tailing /
-# uploads => true = its ok to use the uploads directory
+# the get_template_directory_uri() does not provide a tailing /
+# uploads => true == its ok to use the uploads directory
 $args = array(
     'width'         => '180',
     'height'        => '39',
